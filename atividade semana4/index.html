@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Francisco de Araujo Ferreira Filho</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="cenaDois.js"></script>
+    <script src="cenaUm.js"></script>
+    <script src="game.js"></script>
+<script>
+    var tempo = 0;
+    // Configuração do jogo
+    var config = {
+        type: Phaser.AUTO,
+        width: 800,
+        height: 600,
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 300 },
+                debug: false
+            }
+        },
+        scene:[TelaInicial,TelaJogo, TelaDois]
+    }; 
+
+
+    var game = new Phaser.Game(config);
+    
+</script>
+
+</body>
+</html>
